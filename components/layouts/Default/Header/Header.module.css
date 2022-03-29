@@ -1,0 +1,77 @@
+.header {
+  @apply relative shadow-md;
+}
+
+.wrapper {
+  @apply flex items-center justify-between container h-20 max-w-[1920px];
+  @apply 2xl:px-14 2xl:h-24;
+}
+
+.branding_link {
+  @apply flex w-48;
+  @apply 2xl:w-max;
+}
+
+.menu {
+  @apply absolute flex flex-col w-full top-20 inset-0 p-6 h-[calc(100vh-80px)] bg-white 
+    border-t-2 -translate-x-full z-10;
+  @apply lg:relative lg:flex-row lg:top-0 lg:h-auto lg:flex lg:items-center lg:border-none 
+    lg:translate-x-0;
+}
+
+.menu.active {
+  @apply translate-x-0;
+}
+
+.menu li {
+  @apply relative font-semibold uppercase mb-6 text-right;
+  @apply lg:mb-0 lg:mr-5 lg:text-xs;
+  @apply xl:mr-7 xl:text-sm;
+  @apply 2xl:mr-9 2xl:text-base;
+  @apply last:mr-0;
+}
+
+.menu li a {
+  @apply transition-colors;
+  @apply hover:text-hh-yellow;
+}
+
+.menu li.divisor {
+  @apply relative pt-4;
+  @apply lg:pl-4 lg:pt-0;
+  @apply xl:pl-6;
+  @apply 2xl:pl-9;
+  @apply before:absolute before:left-0 before:top-0 before:w-full before:h-px before:bg-hh-base-dark
+    before:-translate-y-1/2;
+  @apply before:lg:absolute before:lg:left-0 before:lg:top-1/2 before:lg:w-px before:lg:h-4 before:lg:bg-hh-base-dark
+    before:lg:-translate-y-1/2;
+}
+
+.hamburger {
+  @apply lg:hidden;
+  @apply hover:cursor-pointer;
+}
+
+.hamburger span {
+  @apply block w-8 h-1 my-1.5 mx-auto bg-hh-yellow transition-all;
+}
+
+.hamburger.active span:nth-child(1) {
+  @apply translate-y-2.5 rotate-45;
+}
+
+.hamburger.active span:nth-child(2) {
+  @apply opacity-0;
+}
+
+.hamburger.active span:nth-child(3) {
+  @apply -translate-y-2.5 -rotate-45;
+}
+
+.button {
+  @apply py-2 px-6 text-white font-bold bg-hh-yellow rounded-full 
+    border-2 border-transparent;
+  @apply xl:py-3 xl:px-8;
+  @apply 2xl:py-3.5 2xl:px-10;
+  @apply hover:bg-white hover:border-hh-yellow;
+}

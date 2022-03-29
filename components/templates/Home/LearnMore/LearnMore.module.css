@@ -1,0 +1,23 @@
+.root {
+  @apply relative bg-[#EBEBEB] mt-20 py-8;
+}
+
+.content {
+  @apply relative container max-w-5xl z-1;
+}
+
+.content h2 {
+  @apply text-2xl font-bold mb-1.5;
+  @apply lg:text-4xl;
+}
+
+.content h3 {
+  @apply text-sm;
+  @apply lg:text-lg;
+}
+
+.form {
+}
+
+.form_control {
+}

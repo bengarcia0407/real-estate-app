@@ -1,0 +1,8 @@
+.root {
+  @apply py-8;
+  @apply lg:py-12;
+}
+
+.content {
+  @apply container mt-12;
+}

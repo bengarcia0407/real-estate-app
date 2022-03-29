@@ -1,0 +1,19 @@
+.hero {
+  @apply relative flex items-end justify-center box-content;
+  @apply lg:items-center lg:justify-start lg:max-w-7xl lg:mx-auto lg:pt-0 lg:px-4;
+}
+
+.card {
+  @apply relative w-11/12 z-1 mt-32;
+  @apply lg:absolute lg:mt-0 lg:max-w-xl;
+}
+
+.card ul {
+  @apply mt-1.5 ml-6;
+  @apply lg:mt-2.5 lg:ml-8;
+}
+
+.image {
+  @apply absolute w-full h-48 ml-auto top-0;
+  @apply lg:relative lg:h-full lg:min-h-min lg:max-w-4xl lg:aspect-video;
+}

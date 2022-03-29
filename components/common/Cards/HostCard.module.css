@@ -1,0 +1,50 @@
+.root {
+  @apply relative pl-3.5;
+}
+
+.card {
+  @apply w-full h-full shadow-xl;
+}
+
+.image {
+  @apply relative h-64;
+}
+
+.image a {
+  @apply transition-opacity;
+  @apply hover:opacity-90;
+}
+
+.box {
+  @apply p-6;
+}
+
+.box h2 {
+  @apply text-xl font-bold;
+}
+
+.box h2 a {
+  @apply hover:underline;
+}
+
+.box p {
+  @apply flex items-center my-2 text-hh-base-light;
+}
+
+.marker {
+  @apply mr-1;
+}
+
+.hidden {
+  @apply invisible h-6;
+}
+
+.rating {
+  @apply fill-current text-hh-gold;
+}
+
+.badge {
+  @apply absolute flex top-5 left-0 z-1;
+  @apply after:content-['Top\00a0Host'] after:absolute after:top-2 after:left-3 after:text-white
+    after:font-bold after:text-sm;
+}

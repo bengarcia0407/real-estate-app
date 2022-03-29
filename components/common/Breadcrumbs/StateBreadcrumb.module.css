@@ -1,0 +1,17 @@
+.breadcrumb {
+  @apply flex;
+}
+
+.breadcrumb li {
+  @apply text-sm text-hh-yellow;
+  @apply first:text-hh-base-dark;
+  @apply lg:text-sm;
+}
+
+.breadcrumb li + li {
+  @apply before:content-['\00a0/'] before:text-hh-base-dark;
+}
+
+.breadcrumb a {
+  @apply hover:underline;
+}

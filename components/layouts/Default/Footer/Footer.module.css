@@ -1,0 +1,67 @@
+.footer {
+  @apply container py-12 max-w-6xl;
+}
+
+.navigation {
+  @apply flex flex-col justify-between;
+  @apply md:flex-row md:flex-wrap;
+}
+
+.branding_link {
+  @apply flex justify-center w-full mb-10;
+  @apply lg:block lg:w-max;
+}
+
+.menu {
+  @apply flex flex-col items-center;
+  @apply md:items-start;
+}
+
+.menu li {
+  @apply mb-3.5 text-sm;
+}
+
+.menu a {
+  @apply hover:underline;
+}
+
+.menu li.title {
+  @apply font-semibold text-lg;
+}
+
+.menu li.image {
+  @apply mb-2;
+}
+
+.menu li.image a {
+  @apply flex w-full items-center justify-center;
+}
+
+.menu li + li.title {
+  @apply mt-6;
+}
+
+.social_links {
+  @apply grid grid-cols-3 gap-9 w-max mx-auto mt-6;
+}
+
+.social_links a {
+  @apply flex items-center justify-center w-14 h-14 text-white
+    border-2 border-transparent rounded-full bg-hh-teal;
+}
+
+.copyright {
+  @apply flex flex-col items-center mt-20 text-sm;
+  @apply md:flex-row md:flex-wrap md:justify-between;
+  @apply lg:flex-nowrap;
+}
+
+.copyright li {
+  @apply mb-5;
+  @apply md:first:w-full md:text-center;
+  @apply lg:first:w-max;
+}
+
+.copyright a {
+  @apply hover:underline;
+}

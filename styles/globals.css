@@ -1,0 +1,8 @@
+@tailwind base;
+
+html {
+  @apply font-opensans text-hh-base-dark;
+}
+
+@tailwind components;
+@tailwind utilities;
